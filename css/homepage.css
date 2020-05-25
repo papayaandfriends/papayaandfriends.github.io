@@ -1,0 +1,117 @@
+
+/*body {
+  background-color: #ffee61;
+  height:auto;
+  width:auto;
+}*/
+
+
+html,body {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+}
+#background {
+
+	width: 100%;
+	height: 100vh;
+	background-color: #ffee61;
+	/*background-image:url('../video/garrisonwater.gif');*/
+	background-size:auto; 
+
+}
+
+img#cover {
+
+  	position: sticky;
+  	top: 0;
+  	display: block;
+  	margin-left: auto;
+  	margin-right: auto;
+  	width: 30%;
+  	transform-origin:50% 50%;
+  	animation:4s rotateRight infinite linear; 
+  	position: absolute;
+
+
+}
+
+
+@keyframes rotateRight{
+
+    100%{ transform:rotate(360deg); }
+
+}
+
+p {
+
+  font-family: verdana;
+  font-size: 20px;
+
+}
+
+img#title{
+	position: sticky;
+  	top: 0;
+  	display: block;
+  	margin-left: auto;
+  	margin-right: auto;
+  	width: 30%;
+
+
+}
+
+.music-container{
+	text-align:center;
+
+
+}
+
+img#music{
+	position: sticky;
+  	top: 0;
+  	display: inline
+  	margin-left: auto;
+  	margin-right: auto;
+  	width: 20%;
+
+	
+}
+
+.videos-container{
+	text-align:center;
+
+
+}
+
+img#videos{
+	position: sticky;
+  	top: 0;
+  	display: inline;
+  	margin-left: auto;
+  	margin-right: auto;
+  	width: 20%;
+
+	
+}
+
+.shop-container{
+	text-align: center;
+
+
+}
+
+img#shop{
+	position: sticky;
+  	top: 0;
+  	display: inline;
+  	margin-left: auto;
+  	margin-right: auto;
+  	width: 20%;
+  	margin-bottom: 0;
+  	border-bottom: 0;
+
+	
+}

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Papaya & Friends</title>
+    <link rel="stylesheet" type="text/css" href="css/homepage.css" />
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/homepage.js"></script>
+
+
+  </head>
+
+  <body>
+
+
+  	<div id="background">
+  		<script>
+  			var x = Math.floor(Math.random()*2);
+  			//alert(x);
+
+  			if(x==0)
+  			{
+
+  				$("#background").css("background-image", 'url("video/garrisonwater.gif")');
+
+  			}
+  			else if(x==1)
+  			{
+
+  				$('#background').css('background-image', 'url("video/gabfootage2.gif")');
+
+  			}
+
+  			else
+
+  			{
+
+  				alert(":(");
+  			}
+  			
+
+
+
+  		</script>
+  		
+  		<img id="cover" src="images/cover.png" alt=cover> 
+  		<img id="title" src="images/pandf.gif" alt=title>
+  		<div class="music-container">
+	  		<a id="music" href="http://www.fanlink.to/papayahasnofriends">
+	  		  	<img id="music" src="images/music.gif" alt=music>
+	  		  	<script>
+	  		  		$("img#music").mouseover(function() {
+
+	  		  			$("img#music").attr('src','images/music!.gif');
+	  		  		})
+	  		  		$("img#music").mouseout(function() {
+
+	  		  			$("img#music").attr('src','images/music.gif');
+	  		  		})
+
+	  		  	</script>
+
+	  		  	</script>
+	  		</a>
+	  		 
+	  	</div>
+	  	<div class="videos-container">
+	  		<a id="videos" href="https://www.youtube.com/channel/UCELFrTtuQsCXpQoGdFqxdnQ">
+	  		  	<img id="videos" src="images/videos.gif" alt=videos>
+	  		  	<script>
+	  		  		$("img#videos").mouseover(function() {
+
+	  		  			$("img#videos").attr('src','images/videos!.gif');
+	  		  		})
+	  		  		$("img#videos").mouseout(function() {
+
+	  		  			$("img#videos").attr('src','images/videos.gif');
+	  		  		})
+
+	  		  	</script>
+
+	  		</a>
+  		</div>
+  		<div class="shop-container">
+	  		<a id="shop" href="">
+	  		  	<img id="shop" src="images/shop.gif" alt=shop>
+	  		  	<script>
+	  		  		$("img#shop").mouseover(function() {
+
+	  		  			$("img#shop").attr('src','images/shop!.gif');
+	  		  		})
+	  		  		$("img#shop").mouseout(function() {
+
+	  		  			$("img#shop").attr('src','images/shop.gif');
+	  		  		})
+
+	  		  	</script>
+	  		</a>
+	  	</div>
+
+
+  	</div>
+  
+
+  </body>
+</html>
