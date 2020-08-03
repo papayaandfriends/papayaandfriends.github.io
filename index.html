@@ -7,51 +7,82 @@
     <script type="text/javascript" src="js/jquery.min.js"></script>
     <script type="text/javascript" src="js/homepage.js"></script>
 
-
   </head>
 
   <body>
 
 
-  	<div id="background">
-  		<script>
-  			var x = Math.floor(Math.random()*2);
-  			alert(x);
+  	<div class="background">
 
-  			if(x==0)
+
+    	<video loop muted autoplay id="background_video">
+	        <source src="video/garrisonwater_1.mp4" type="video/mp4" id="background_videomp4">
+    	</video>
+
+  		<script>
+  			var x = Math.floor(Math.random()*6);	
+  				
+  			var videocontainer = document.getElementById('background_video');
+
+			var videosource = document.getElementById('background_videomp4'); 
+			var Garmp4 = 'video/garrison.mp4';
+			var Devmp4 = 'video/devon.mp4';
+			var Gabmp4 = 'video/gabby.mp4';
+			var Henmp4 = 'video/henson.mp4';
+			var Ayomp4 = 'video/ayo.mp4'
+			var GarGabmp4 = 'video/gabgar.mp4';
+			videocontainer.pause();
+			//alert(x);
+			if(x==0)
   			{
 
-  				$("#background").css("background-image", 'url("video/garrisonwater.gif")');
-
+  				videosource.src=Garmp4;
+  				
   			}
   			else if(x==1)
   			{
-
-  				$('#background').css('background-image', 'url("video/gabfootage2.gif")');
-
+  		
+  				videosource.src=Devmp4;
   			}
-
-  			else
-
+  			else if(x==2)
   			{
 
-  				alert(":(");
+  				videosource.src=Gabmp4;
   			}
+  			else if(x==3)
+  			{
+
+  				videosource.src=Henmp4;
+
+  			}
+  			else if(x==4)
+  			{
+
+  				videosource.src=GarGabmp4;
+
+  			}
+  			else if(x==5)
+  			{
+
+  				videosource.src=Ayomp4;
+
+  			}
+
+  			videocontainer.load();
+  			videocontainer.play();
   			
 
-
-
-  		</script>
-  		
+  		</script>    	
+	
   		<img id="cover" src="images/cover.png" alt=cover> 
-  		<img id="title" src="images/pandf.GIF" alt=title>
+  		<img id="title" src="images/pandf.gif" alt=title>
   		<div class="music-container">
 	  		<a id="music" href="http://www.fanlink.to/papayahasnofriends">
-	  		  	<img id="music" src="images/music.GIF" alt=music>
+	  		  	<img id="music" src="images/music.gif" alt=music>
 	  		  	<script>
 	  		  		$("img#music").mouseover(function() {
 
-	  		  			$("img#music").attr('src','images/music!.gif');
+	  		  			$("img#music").attr('src','images/music!.GIF');
 	  		  		})
 	  		  		$("img#music").mouseout(function() {
 
@@ -66,13 +97,13 @@
 	  	</div>
 	  	<div class="videos-container">
 	  		<a id="videos" href="https://www.youtube.com/channel/UCELFrTtuQsCXpQoGdFqxdnQ">
-	  		  	<img id="videos" src="images/videos.GIF" alt=videos>
+	  		  	<img id="videos" src="images/videos.gif" alt=videos>
 	  		  	<script>
 	  		  		$("img#videos").mouseover(function() {
 
-	  		  			$("img#videos").attr('src','images/videos!.gif');
+	  		  			$("img#videos").attr('src','images/videos!.GIF');
 	  		  		})
-	  		  		$("img#videos").mouseout(function() {
+  	  		  		$("img#videos").mouseout(function() {
 
 	  		  			$("img#videos").attr('src','images/videos.GIF');
 	  		  		})
@@ -83,11 +114,11 @@
   		</div>
   		<div class="shop-container">
 	  		<a id="shop" href="">
-	  		  	<img id="shop" src="images/shop.GIF" alt=shop>
+	  		  	<img id="shop" src="images/shop.gif" alt=shop>
 	  		  	<script>
 	  		  		$("img#shop").mouseover(function() {
 
-	  		  			$("img#shop").attr('src','images/shop!.gif');
+	  		  			$("img#shop").attr('src','images/shop!.GIF');
 	  		  		})
 	  		  		$("img#shop").mouseout(function() {
 
